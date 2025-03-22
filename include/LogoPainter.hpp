@@ -33,6 +33,9 @@ namespace PHENIXTools
     *
     * The logo will be drawn (in NDC) from x to x + size along X axis and from y to y + 0.4772*size along y axis.
     *
+    * Warning: do not set your TPad size less than 200 pixels in width or height. 
+    * This will mess up the calculation of sizes along x and y axis since pixels must be used for consistency.
+    *
     * See examples how to print logo in different situtations:
     * @example prelim.cpp Shows how to use it if you compile your code with GNU GCC
     * @example cling_prelim.cpp Shows how to use it if you run your code via ROOT CLING interpreter
