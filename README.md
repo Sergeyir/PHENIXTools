@@ -49,4 +49,4 @@ xdg-open html/index.html
 
 # Usage
 
-See [examples](https://sergeyir.github.io/documentation/PHENIXTools/examples.html) on how to use libraries from this project.
+See [examples](https://sergeyir.github.io/documentation/PHENIXTools/examples.html) in example directory on how to use libraries from this project.
