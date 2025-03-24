@@ -19,8 +19,9 @@
 #include "TColor.h"
 #include "TGraph.h"
 
-/// namespace PHENIXTools
-/// @brief Contains all functions and variables that are needed for this project
+/*! @namespace PHENIXTools
+ *  @brief Contains all functions and variables that are needed for this project
+ */
 namespace PHENIXTools
 {
    /*! @brief Draw preliminary logo on a TPad. 
@@ -33,13 +34,8 @@ namespace PHENIXTools
     *
     * The logo will be drawn (in NDC) from x to x + size along X axis and from y to y + 0.4772*size along y axis.
     *
-    * Warning: do not set your TPad size less than 200 pixels in width or height. 
-    * This will mess up the calculation of sizes along x and y axis since pixels must be used for consistency.
-    *
-    * See examples how to print logo in different situtations:
-    * @example prelim.cpp Shows how to use it if you compile your code with GNU GCC
-    * @example cling_prelim.cpp Shows how to use it if you run your code via ROOT CLING interpreter
-    * @example prelim.py Shows how to use it if you run your code via PyROOT
+    * Warning: do not set your TPad size less than 400 pixels in width or height. 
+    * This might mess up the calculation of sizes of the logo along x and y axis since pixels must be used for consistency.
     */
    void DrawPreliminary(const double x, const double y, const double size = 0.25);
    /// Draws bezier shape from the points that were extracted by dividing bezier 

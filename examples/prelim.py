@@ -1,5 +1,5 @@
 ''' 
-@file prelim.cpp 
+@file prelim.py
 @brief Example that shows how to draw PHENIX preliminary logo 
 
 How to use: call "python examples/prelim.py" from the root of the repository

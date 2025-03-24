@@ -1,5 +1,5 @@
 /** 
- *  @file prelim.cpp 
+ *  @file cling_prelim.cpp 
  *  @brief Example that shows how to draw PHENIX preliminary logo 
  *
  *  How to use: call "root examples/cling_prelim.cpp" from the root of the repository
