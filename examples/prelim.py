@@ -29,7 +29,7 @@ ROOT.gInterpreter.ProcessLine('#include "LogoPainter.hpp"')
 c = ROOT.TCanvas("", "", 800, 800)
 ROOT.gPad.DrawFrame(0., 0., 1., 1.)
 
-ROOT.PHENIXTools.DrawPreliminary(0.2, 0.2, 0.5)
+ROOT.PHENIXTools.DrawPreliminary(0.6, 0.6, 0.2)
 
 os.system('mkdir output')
 c.SaveAs('output/prelim.pdf')

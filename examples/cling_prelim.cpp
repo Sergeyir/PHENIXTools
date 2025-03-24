@@ -18,7 +18,7 @@ void cling_prelim()
    gPad->DrawFrame(0., 0., 1., 1.);
 
    // Only this function is needed to draw the logo
-   PHENIXTools::DrawPreliminary(0.2, 0.2, 0.5);
+   PHENIXTools::DrawPreliminary(0.6, 0.6, 0.2);
 
    system("mkdir output");
    c->SaveAs("output/prelim.pdf");

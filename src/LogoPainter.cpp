@@ -48,8 +48,8 @@ void PHENIXTools::DrawPreliminary(const double x, const double y, const double s
    normalText.SetTextFont(42);
    boldText.SetTextFont(62);
 
-   normalText.SetTextSize(size/1.076);
-   boldText.SetTextSize(size/1.03);
+   normalText.SetTextSize(0.5/1.076);
+   boldText.SetTextSize(0.5/1.03);
 
    normalText.DrawText(-0.0115, 0.094, "preliminary");
    boldText.DrawText(0., 0.43, "PH");
