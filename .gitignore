@@ -4,6 +4,7 @@ latex/
 build/
 CMakeFiles/
 output/
+bin/
 
 *:w
 *.log
@@ -15,6 +16,7 @@ output/
 *.a
 *.root
 *.cmake
+*__pycache__*
 
 CMakeCache.txt
 Makefile
