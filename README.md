@@ -33,7 +33,7 @@ make
 
 # Documentation
 
-You can view the detailed documentation at https://sergeyir.github.io/documentation/ROOTTools/. (see Namespaces / Namespaces List / PHENIXTools). Since this repository is not designed to be used on its own and is intended to be used as a set of libraries, every class, method, and variable are all in the PHENIXTools namespace scope.
+You can view the detailed documentation at https://sergeyir.github.io/documentation/PHENIXTools/. (see Namespaces / Namespaces List / PHENIXTools). Since this repository is not designed to be used on its own and is intended to be used as a set of libraries, every class, method, and variable are all in the PHENIXTools namespace scope.
 
 If the link is inaccessible, you can generate the documentation yourself with Doxygen. To do this run while in the root of the repository
 
