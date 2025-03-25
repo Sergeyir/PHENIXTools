@@ -6,8 +6,8 @@
  *
  *  @author Sergei Antsupov (antsupov0124@gmail.com)
  **/
-#ifndef LOGO_PAINTER_HPP
-#define LOGO_PAINTER_HPP
+#ifndef PHENIX_TOOLS_LOGO_PAINTER_HPP
+#define PHENIX_TOOLS_LOGO_PAINTER_HPP
 
 #include <cmath>
 #include <fstream>
@@ -21,6 +21,8 @@
 
 /*! @namespace PHENIXTools
  *  @brief Contains all functions and variables that are needed for this project
+ *
+ *  @example prelim.cpp
  */
 namespace PHENIXTools
 {
@@ -46,10 +48,8 @@ namespace PHENIXTools
    void DrawRectangle(const double x1, const double y1, const double x2, const double y2,
                       const double x3, const double y3, const double x4, const double y4,
                       const double scaleX, const double scaleY, const Color_t color);
-   /// Path to the file containing info of the red thing
-   std::string redThingFile;// = RED_THING_PATH;
    /// Variable that lets TObjects have unique name so that they will not be overwritten
    int uniqueId = 0;
 }
 
-#endif /* LOGO_PAINTER_HPP */
+#endif /* PHENIX_TOOLS_LOGO_PAINTER_HPP */

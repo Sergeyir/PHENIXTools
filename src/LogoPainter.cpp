@@ -6,8 +6,8 @@
  *
  *  @author Sergei Antsupov (antsupov0124@gmail.com)
  **/
-#ifndef LOGO_PAINTER_CPP
-#define LOGO_PAINTER_CPP
+#ifndef PHENIX_TOOLS_LOGO_PAINTER_CPP
+#define PHENIX_TOOLS_LOGO_PAINTER_CPP
 
 #include "../include/LogoPainter.hpp"
 
@@ -21,8 +21,8 @@ void PHENIXTools::DrawPreliminary(const double x, const double y, const double s
 
    gPad->Update();
 
-   const double scaleX = 1./190.417;
-   const double scaleY = 1./91.363;
+   constexpr double scaleX = 1./190.417;
+   constexpr double scaleY = 1./91.363;
 
    const double xMax = x + (gPad->PixeltoX((gPad->UtoPixel(size))) - gPad->PixeltoX(0))/
                            (gPad->GetX2() - gPad->GetX1());
@@ -48,8 +48,8 @@ void PHENIXTools::DrawPreliminary(const double x, const double y, const double s
    normalText.SetTextFont(42);
    boldText.SetTextFont(62);
 
-   normalText.SetTextSize(0.5/1.076);
-   boldText.SetTextSize(0.5/1.03);
+   normalText.SetTextSize(0.4646);
+   boldText.SetTextSize(0.4854);
 
    normalText.DrawText(-0.0115, 0.094, "preliminary");
    boldText.DrawText(0., 0.43, "PH");
@@ -68,6 +68,7 @@ void PHENIXTools::DrawPreliminary(const double x, const double y, const double s
                     scaleX, scaleY, 14);
    }
 
+   // RED_THING_PATH was assigned at a compilation time (see RED_THING_PATH in CMakeLists.txt)
    DrawBezierShape(RED_THING_PATH, 75.13, 91.363 - 19.43, scaleX, scaleY, 2);
 }
 
@@ -107,8 +108,8 @@ void PHENIXTools::DrawBezierShape(const std::string inputFileName,
 }
 
 void PHENIXTools::DrawRectangle(const double x1, const double y1, const double x2, const double y2,
-                               const double x3, const double y3, const double x4, const double y4,
-                               const double scaleX, const double scaleY, const Color_t color)
+                                const double x3, const double y3, const double x4, const double y4,
+                                const double scaleX, const double scaleY, const Color_t color)
 {
    TGraph graph;
 
