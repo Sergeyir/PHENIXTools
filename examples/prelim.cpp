@@ -1,5 +1,12 @@
 /** 
  *  @file prelim.cpp 
+ *  @brief Example that shows how to draw PHENIX preliminary logo 
+ *
+ *  How to use: call "bin/prelim" from the root of the repository
+ *
+ *  This file is an example in a project PHENIXTools (https://github.com/Sergeyir/PHENIXTools).
+ *
+ *  @author Sergei Antsupov (antsupov0124@gmail.com)
  **/
 #include "TCanvas.h"
 
